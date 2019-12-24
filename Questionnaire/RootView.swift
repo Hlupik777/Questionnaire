@@ -17,81 +17,23 @@ struct RootView: View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
                 ScrollView {
-                    HStack() {
-                        Spacer()
-                        Image("main")
-                            .resizable()
-                            .frame(width: 180, height: 180)
-                            .padding(.top, 30)
-                            .padding(.bottom, 8)
-                        Spacer()
-                    }
+                    AuthImageView()
+                    
                     Text("Опросник")
                         .font(.system(size: 42))
-                    VStack() {
-                        TextField("login", text: self.$login)
-                            .textFieldStyle(PlainTextFieldStyle())
-                            .padding(.horizontal, 16)
-                    }
-                    .frame(height: 50)
-                    .background(Color.white)
-                    .border(Color.black, width: 1.5)
-                    .padding(.vertical, 5)
-                    .padding(.horizontal, 24)
                     
-                    VStack() {
-                        SecureField("password", text: self.$password)
-                            .textFieldStyle(PlainTextFieldStyle())
-                            .padding(.horizontal, 16)
-                    }
-                    .frame(height: 50)
-                    .background(Color.white)
-                    .border(Color.black, width: 1.5)
-                    .padding(.vertical, 5)
-                    .padding(.horizontal, 24)
+                    AuthTextFieldView(field: self.$login, placeholder: "login", isSecure: false)
+                    AuthTextFieldView(field: self.$password, placeholder: "password", isSecure: true)
                     
-                    Button(action: {
-                        
-                    }) {
-                        Text("Sign In")
-                            .foregroundColor(.white)
-                            .bold()
-                    }
-                    .frame(width: geometry.size.width - 48, height: 50)
-                    .background(Color.black)
-                    .border(Color.black, width: 1.5)
-                    .padding(.vertical, 5)
-                    .padding(.horizontal, 24)
+                    AuthButtonView(width: geometry.size.width, text: "Sign In")
                     
-                    HStack() {
-                        VStack() {
-                            Divider().background(Color.black)
-                        }
-                        .padding(.leading, 24)
-                        Text("Or")
-                        VStack() {
-                            Divider().background(Color.black)
-                        }
-                        .padding(.trailing, 24)
-                    }
+                    AuthLineView(text: "Or")
                     
-                    Button(action: {
-                        
-                    }) {
-                        Text("Register")
-                        .foregroundColor(.white)
-                        .bold()
-                    }
-                    .frame(width: geometry.size.width - 48, height: 50)
-                    .background(Color.black)
-                    .border(Color.black, width: 1.5)
-                    .padding(.vertical, 5)
-                    .padding(.horizontal, 24)
+                    AuthButtonView(width: geometry.size.width, text: "Register")
                 }
             }
-            .frame(width: geometry.size.width,
-                   height: geometry.size.height)
-                .background(Color.bgColor())
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .background(Color.bgColor())
         }
     }
 }

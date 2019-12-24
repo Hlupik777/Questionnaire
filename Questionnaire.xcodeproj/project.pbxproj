@@ -16,7 +16,10 @@
 		A5B8171523B0E2C2004C8D7B /* QuestionnaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8171423B0E2C2004C8D7B /* QuestionnaireTests.swift */; };
 		A5B8172023B0E2C2004C8D7B /* QuestionnaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8171F23B0E2C2004C8D7B /* QuestionnaireUITests.swift */; };
 		A5B8173123B0E79A004C8D7B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173023B0E79A004C8D7B /* Color+Extension.swift */; };
-		A5B8173323B0E831004C8D7B /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173223B0E831004C8D7B /* Image+Extension.swift */; };
+		A5B8173623B1FF44004C8D7B /* AuthButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173523B1FF44004C8D7B /* AuthButtonView.swift */; };
+		A5B8173823B2001F004C8D7B /* AuthTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173723B2001F004C8D7B /* AuthTextFieldView.swift */; };
+		A5B8173A23B2039A004C8D7B /* AuthImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173923B2039A004C8D7B /* AuthImageView.swift */; };
+		A5B8173C23B2040A004C8D7B /* AuthLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173B23B2040A004C8D7B /* AuthLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,10 @@
 		A5B8171F23B0E2C2004C8D7B /* QuestionnaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireUITests.swift; sourceTree = "<group>"; };
 		A5B8172123B0E2C2004C8D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B8173023B0E79A004C8D7B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		A5B8173223B0E831004C8D7B /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		A5B8173523B1FF44004C8D7B /* AuthButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonView.swift; sourceTree = "<group>"; };
+		A5B8173723B2001F004C8D7B /* AuthTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldView.swift; sourceTree = "<group>"; };
+		A5B8173923B2039A004C8D7B /* AuthImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthImageView.swift; sourceTree = "<group>"; };
+		A5B8173B23B2040A004C8D7B /* AuthLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		A5B816FC23B0E2BE004C8D7B /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				A5B8173423B1FEF9004C8D7B /* Auth */,
 				A5B8172F23B0E782004C8D7B /* Extensions */,
 				A5B816FD23B0E2BE004C8D7B /* AppDelegate.swift */,
 				A5B816FF23B0E2BE004C8D7B /* SceneDelegate.swift */,
@@ -145,9 +152,19 @@
 			isa = PBXGroup;
 			children = (
 				A5B8173023B0E79A004C8D7B /* Color+Extension.swift */,
-				A5B8173223B0E831004C8D7B /* Image+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5B8173423B1FEF9004C8D7B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A5B8173523B1FF44004C8D7B /* AuthButtonView.swift */,
+				A5B8173723B2001F004C8D7B /* AuthTextFieldView.swift */,
+				A5B8173923B2039A004C8D7B /* AuthImageView.swift */,
+				A5B8173B23B2040A004C8D7B /* AuthLineView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B8173323B0E831004C8D7B /* Image+Extension.swift in Sources */,
+				A5B8173623B1FF44004C8D7B /* AuthButtonView.swift in Sources */,
+				A5B8173823B2001F004C8D7B /* AuthTextFieldView.swift in Sources */,
+				A5B8173C23B2040A004C8D7B /* AuthLineView.swift in Sources */,
 				A5B816FE23B0E2BE004C8D7B /* AppDelegate.swift in Sources */,
 				A5B8170023B0E2BE004C8D7B /* SceneDelegate.swift in Sources */,
+				A5B8173A23B2039A004C8D7B /* AuthImageView.swift in Sources */,
 				A5B8170223B0E2BE004C8D7B /* RootView.swift in Sources */,
 				A5B8173123B0E79A004C8D7B /* Color+Extension.swift in Sources */,
 			);
