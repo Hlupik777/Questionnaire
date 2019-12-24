@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		A5B816FE23B0E2BE004C8D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816FD23B0E2BE004C8D7B /* AppDelegate.swift */; };
 		A5B8170023B0E2BE004C8D7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816FF23B0E2BE004C8D7B /* SceneDelegate.swift */; };
-		A5B8170223B0E2BE004C8D7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8170123B0E2BE004C8D7B /* ContentView.swift */; };
+		A5B8170223B0E2BE004C8D7B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8170123B0E2BE004C8D7B /* RootView.swift */; };
 		A5B8170423B0E2C2004C8D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B8170323B0E2C2004C8D7B /* Assets.xcassets */; };
 		A5B8170723B0E2C2004C8D7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B8170623B0E2C2004C8D7B /* Preview Assets.xcassets */; };
 		A5B8170A23B0E2C2004C8D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B8170823B0E2C2004C8D7B /* LaunchScreen.storyboard */; };
 		A5B8171523B0E2C2004C8D7B /* QuestionnaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8171423B0E2C2004C8D7B /* QuestionnaireTests.swift */; };
 		A5B8172023B0E2C2004C8D7B /* QuestionnaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8171F23B0E2C2004C8D7B /* QuestionnaireUITests.swift */; };
+		A5B8173123B0E79A004C8D7B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173023B0E79A004C8D7B /* Color+Extension.swift */; };
+		A5B8173323B0E831004C8D7B /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8173223B0E831004C8D7B /* Image+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A5B816FA23B0E2BE004C8D7B /* Questionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B816FA23B0E2BE004C8D7B /* Анкета.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Анкета.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B816FD23B0E2BE004C8D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5B816FF23B0E2BE004C8D7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5B8170123B0E2BE004C8D7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5B8170123B0E2BE004C8D7B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A5B8170323B0E2C2004C8D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B8170623B0E2C2004C8D7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5B8170923B0E2C2004C8D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		A5B8171B23B0E2C2004C8D7B /* QuestionnaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionnaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B8171F23B0E2C2004C8D7B /* QuestionnaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireUITests.swift; sourceTree = "<group>"; };
 		A5B8172123B0E2C2004C8D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5B8173023B0E79A004C8D7B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A5B8173223B0E831004C8D7B /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,7 @@
 		A5B816FB23B0E2BE004C8D7B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5B816FA23B0E2BE004C8D7B /* Questionnaire.app */,
+				A5B816FA23B0E2BE004C8D7B /* Анкета.app */,
 				A5B8171023B0E2C2004C8D7B /* QuestionnaireTests.xctest */,
 				A5B8171B23B0E2C2004C8D7B /* QuestionnaireUITests.xctest */,
 			);
@@ -99,9 +103,10 @@
 		A5B816FC23B0E2BE004C8D7B /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				A5B8172F23B0E782004C8D7B /* Extensions */,
 				A5B816FD23B0E2BE004C8D7B /* AppDelegate.swift */,
 				A5B816FF23B0E2BE004C8D7B /* SceneDelegate.swift */,
-				A5B8170123B0E2BE004C8D7B /* ContentView.swift */,
+				A5B8170123B0E2BE004C8D7B /* RootView.swift */,
 				A5B8170323B0E2C2004C8D7B /* Assets.xcassets */,
 				A5B8170823B0E2C2004C8D7B /* LaunchScreen.storyboard */,
 				A5B8170B23B0E2C2004C8D7B /* Info.plist */,
@@ -136,6 +141,15 @@
 			path = QuestionnaireUITests;
 			sourceTree = "<group>";
 		};
+		A5B8172F23B0E782004C8D7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5B8173023B0E79A004C8D7B /* Color+Extension.swift */,
+				A5B8173223B0E831004C8D7B /* Image+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,7 +167,7 @@
 			);
 			name = Questionnaire;
 			productName = Questionnaire;
-			productReference = A5B816FA23B0E2BE004C8D7B /* Questionnaire.app */;
+			productReference = A5B816FA23B0E2BE004C8D7B /* Анкета.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A5B8170F23B0E2C2004C8D7B /* QuestionnaireTests */ = {
@@ -267,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B8173323B0E831004C8D7B /* Image+Extension.swift in Sources */,
 				A5B816FE23B0E2BE004C8D7B /* AppDelegate.swift in Sources */,
 				A5B8170023B0E2BE004C8D7B /* SceneDelegate.swift in Sources */,
-				A5B8170223B0E2BE004C8D7B /* ContentView.swift in Sources */,
+				A5B8170223B0E2BE004C8D7B /* RootView.swift in Sources */,
+				A5B8173123B0E79A004C8D7B /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.digt.Questionnaire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Анкета";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.digt.Questionnaire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Анкета";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
